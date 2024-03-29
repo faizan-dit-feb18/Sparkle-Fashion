@@ -1,0 +1,1205 @@
+/* gennaral code css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    /* padding: 0 150px; */
+    margin: 0 auto;
+}
+
+/* pancial bennar */
+.pancial-main {
+    background-color: #c4dcff;
+}
+
+.pancial p {
+    /* font-size: 18px; */
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
+/* headedr */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.header-heading {
+    /* font-size: 48px; */
+    color: #0066FF;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.header-search form .search::placeholder {
+    color: #D2D2D2;
+}
+
+.header-search form .search {
+    width: 825px;
+    font-size: 18px;
+    border: 1px solid #C4DCFF;
+    border-radius: 5px;
+    background: url(./img/icon.png) no-repeat;
+    background-position: 10px;
+}
+
+.header-search form {
+    position: relative;
+}
+
+.header-search form .submit {
+    color: #FFFFFF;
+    background-color: #0066FF;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    border: none;
+}
+
+.header-account {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+
+}
+
+.account {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-account .account .acc .acc-name {
+    padding-left: 5px;
+    color: #696969;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+.acc form select {
+    font-weight: 700;
+    border: none;
+    font-family: "Nunito", sans-serif;
+    background: url(./img/drop.png) no-repeat right 5px center;
+}
+
+.favourite,
+.cart {
+    position: relative;
+}
+
+.favourite a img,
+.cart a img {
+    padding: 8px;
+    background-color: #C4DCFF;
+    border-radius: 8px;
+}
+
+.favourite a span,
+.cart a span {
+    color: #fff;
+    background-color: #0066FF;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    padding: 4px 6px 3px 6px;
+    border-radius: 50%;
+}
+
+.navigation-main {
+    background-color: #edf4ff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+
+}
+
+nav ul a {
+    color: #000;
+    padding: 14px 10px;
+    border-radius: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+nav ul a:hover {
+    background-color: #0066FF;
+    color: #fff;
+    font-weight: 700;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.hero {
+    width: 676px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hero .first {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #4C4C4C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 54px;
+    margin: 24px 0;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.hero .last {
+    font-size: 18px;
+    line-height: 21.09px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #4C4C4C;
+}
+
+.hero a {
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 18px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    display: inline-block;
+    padding: 18px 36px;
+    border-radius: 5px;
+    margin-top: 32px;
+    background-color: #0066FF;
+}
+
+.hero .white {
+    color: #232323;
+    background-color: #C4DCFF;
+    margin-left: 24px;
+}
+
+.top-categories {
+    margin: 64px 0;
+}
+
+.top-categories-heading h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
+.categories-list {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-top,
+.categories-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.categories {
+    position: relative;
+}
+
+.categories-top a h3,
+.categories-bottom a h3 {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 32px;
+    left: 48px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #FFFFFF;
+}
+
+.products-item {
+    background-color: #F8F8F8;
+    /* width: 25%; */
+    margin: 0 16px;
+}
+
+.products-list .slick-list {
+    margin: 0 -16px;
+}
+
+.item-list {
+    padding: 24px;
+}
+
+.reating-list {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+}
+
+.star .full {
+    color: #FFC700;
+}
+
+.empty {
+    color: #E3E3E3;
+}
+
+.products-heading h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
+
+.products-list {
+    display: flex;
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+p.item-title {
+    font-size: 18px;
+    color: #0066FF;
+    line-height: 21.09px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.item-list h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 12px 0 16px;
+}
+
+.item-list .view {
+    font-size: 14px;
+    line-height: 19.1px;
+    font-weight: 400;
+    color: #696969;
+    font-family: "Nunito", sans-serif;
+}
+
+/* .price {
+    display: flex;
+    align-items: center;
+} */
+.item-list .price p {
+    font-size: 24px;
+    /* line-height: 32.74px; */
+    font-weight: 700;
+    margin: 24px 16px 32px 0;
+    font-family: "Nunito", sans-serif;
+    display: inline-block;
+    color: #0066FF;
+}
+
+.item-list .price span {
+    font-size: 16px;
+    line-height: 21.82px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    color: #696969;
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+
+.list-cart {
+    font-size: 18px;
+    line-height: 24.55px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 23px 80px 24px 77px;
+    background-color: #C4DCFF;
+    color: #0D3E9D;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-cart:hover {
+    color: #C4DCFF;
+    background-color: #0D3E9D;
+
+}
+
+.list-img {
+    padding: 20px 19px;
+    margin-left: 14px;
+    background-color: #C4DCFF;
+    border-radius: 10px;
+}
+
+.categories img {
+    width: 100%;
+    display: flex;
+}
+
+.products-item .products-img {
+    width: 100%;
+}
+
+.slick-dots {
+    bottom: 30px;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #0066FF;
+    color: #0066FF;
+}
+
+.slick-dots li button:before {
+    width: 15px;
+    font-size: 18x;
+    height: 15px;
+    top: -2px;
+    left: -2px;
+    color: transparent;
+    border: 3px solid #0066FF;
+    border-radius: 50%;
+}
+
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+}
+
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.fa-prev,
+.fa-next {
+    position: absolute;
+    top: 50%;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #0066FF;
+    color: #232323;
+    z-index: 1;
+    transform: translate(0, -50%);
+}
+
+.fa-prev {
+    left: 25px;
+}
+
+.fa-next {
+    right: 25px;
+}
+
+.fa-next:hover,
+.fa-prev:hover {
+    background-color: #000;
+    color: #FFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item-list .link {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .pancial p {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 12px 0;
+    }
+
+    .header {
+        gap: 22px;
+        padding: 30px 0;
+    }
+
+    .header-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .header-search form .search {
+        width: 386px;
+        font-size: 13px;
+        line-height: 19px;
+        padding: 11px 87px 11px 31px;
+        background-position: 10px;
+        background-size: 12px;
+
+    }
+
+    .header-search form .submit {
+        font-size: 13px;
+        line-height: 14px;
+        padding: 14px 25px;
+    }
+
+    .header-account {
+        gap: 22px;
+    }
+
+    .header-account .account .acc .acc-name {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .acc form select {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .favourite a img,
+    .cart a img {
+        padding: 7px;
+    }
+
+    .favourite a span,
+    .cart a span {
+        font-size: 13px;
+        padding: 3px 5px 3px 5px;
+    }
+
+
+    nav ul {
+        gap: 25px;
+        padding: 12px 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    nav ul a {
+        padding: 10px;
+    }
+
+
+    .hero-main img {
+        width: 100%;
+    }
+
+    .hero {
+        width: 445px;
+    }
+
+    .hero .first {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 35px;
+        margin: 17px 0;
+    }
+
+    .hero .last {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .hero a {
+        font-size: 14px;
+        line-height: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 11px 23px;
+    }
+
+    .hero .white {
+        margin-left: 15px;
+    }
+
+    .top-categories {
+        margin: 40px 0;
+    }
+
+    .top-categories-heading h2 {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .categories-list {
+        gap: 23px;
+    }
+
+    .categories-top,
+    .categories-bottom {
+        gap: 23px;
+    }
+
+    .categories-top a h3,
+    .categories-bottom a h3 {
+        font-size: 23px;
+        line-height: 25px;
+        bottom: 22px;
+        left: 34px;
+    }
+
+    .item-list {
+        padding-left: 10px;
+    }
+
+    .products-heading h2 {
+        font-size: 23px;
+        line-height: 23px;
+    }
+
+    .products-list {
+        margin: 15px 0;
+        gap: 23px;
+
+    }
+
+    p.item-title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .item-list h3 {
+        font-size: 15px;
+        line-height: 16px;
+        padding: 11px 0 14px;
+    }
+
+    .item-list .view {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .item-list .price p {
+        font-size: 17px;
+        line-height: 17px;
+        margin: 18px 13px 20px 0;
+    }
+
+    .item-list .price span {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .list-cart {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 18px;
+    }
+
+    .list-img {
+        padding: 16px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .container {
+        padding: 0 70px;
+    }
+
+    .pancial p {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 12px 0;
+    }
+
+    .header {
+        gap: 25px;
+        padding: 33px 0;
+    }
+
+    .header-heading {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .header-search form .search {
+        width: 555px;
+        font-size: 16px;
+        line-height: 21.09px;
+        padding: 11px 155px 12px 50px;
+        background-position: 16px;
+    }
+
+    .header-search form .submit {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 14px 50px;
+    }
+
+    .header-account .account .acc .acc-name {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .acc form select {
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .favourite a img,
+    .cart a img {
+        padding: 7px;
+    }
+
+    .favourite a span,
+    .cart a span {
+        font-size: 14px;
+        padding: 3px 5px 3px 5px;
+    }
+
+
+    nav ul {
+        gap: 32px;
+        padding: 12px 0;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    nav ul a {
+        padding: 10px;
+    }
+
+
+    .hero-main img {
+        width: 100%;
+    }
+
+    .hero {
+        width: 555px;
+    }
+
+    .hero .first {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 42px;
+        margin: 20px 0;
+    }
+
+    .hero .last {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .hero a {
+        font-size: 15px;
+        line-height: 15px;
+        border-radius: 5px;
+        margin-top: 23px;
+        padding: 13px 28px;
+    }
+
+    .hero .white {
+        margin-left: 19px;
+    }
+
+    .top-categories {
+        margin: 45px 0;
+    }
+
+    .top-categories-heading h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .categories-list {
+        gap: 26px;
+    }
+
+    .categories-top,
+    .categories-bottom {
+        gap: 26px;
+    }
+
+    .categories-top a h3,
+    .categories-bottom a h3 {
+        font-size: 26px;
+        line-height: 30px;
+        bottom: 25px;
+        left: 40px;
+    }
+
+    .item-list {
+        padding-left: 20px;
+    }
+
+    .products-heading h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .products-list {
+        margin: 26px 0;
+        gap: 26px;
+
+    }
+
+    p.item-title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .item-list h3 {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 11px 0 14px;
+    }
+
+    .item-list .view {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .item-list .price p {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 20px 15px 25px 0;
+    }
+
+    .item-list .price span {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .list-cart {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 18px 39px 18px 39px;
+
+    }
+
+    .list-img {
+        padding: 16px;
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        padding: 0 90px;
+    }
+
+    .pancial p {
+        font-size: 16px;
+        line-height: 21.09px;
+        padding: 13px 0;
+    }
+
+    .header {
+        gap: 30px;
+        padding: 38px 0;
+    }
+
+    .header-heading {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .header-search form .search {
+        width: 555px;
+        font-size: 16px;
+        line-height: 21.09px;
+        padding: 13px 160px 13px 59px;
+        background-position: 19px;
+        background-size: auto;
+    }
+
+    .header-search form .submit {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 15px 55px;
+    }
+
+    .header-account .account .acc .acc-name {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .acc form select {
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .favourite a img,
+    .cart a img {
+        padding: 7px;
+    }
+
+    .favourite a span,
+    .cart a span {
+        font-size: 14px;
+        padding: 4px 5px;
+    }
+
+
+    nav ul {
+        gap: 35px;
+        padding: 12px 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    nav ul a {
+        padding: 11px;
+    }
+
+
+    .hero-main img {
+        width: 100%;
+    }
+
+    .hero {
+        width: 575px;
+    }
+
+    .hero .first {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin: 21px 0;
+    }
+
+    .hero .last {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .hero a {
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 5px;
+        margin-top: 25px;
+        padding: 15px 32px;
+    }
+
+    .hero .white {
+        margin-left: 21px;
+    }
+
+    .top-categories {
+        margin: 52px 0;
+    }
+
+    .top-categories-heading h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .categories-list {
+        gap: 28px;
+    }
+
+    .categories-top,
+    .categories-bottom {
+        gap: 28px;
+    }
+
+    .categories-top a h3,
+    .categories-bottom a h3 {
+        font-size: 28px;
+        line-height: 34px;
+        bottom: 28px;
+        left: 45px;
+    }
+
+    .item-list {
+        padding-left: 22px;
+    }
+
+    .products-heading h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .products-list {
+        margin: 28px 0;
+        gap: 28px;
+
+    }
+
+    p.item-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .item-list h3 {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 11px 0 14px;
+    }
+
+    .item-list .view {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .item-list .price p {
+        font-size: 22px;
+        line-height: 28px;
+        margin: 22px 15px 28px 0;
+    }
+
+    .item-list .price span {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .list-cart {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 17px 45px;
+
+    }
+
+    .list-img {
+        padding: 15px;
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        padding: 0 150px;
+    }
+
+    .pancial p {
+        font-size: 18px;
+        line-height: 21.09px;
+        padding: 14px 0;
+    }
+
+    .header {
+        gap: 42px;
+        padding: 45px 0;
+    }
+
+    .header-heading {
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+    .header-search form .search {
+        width: 825px;
+        font-size: 18px;
+        line-height: 21.09px;
+        padding: 19px 180px 20px 59px;
+        background-position: 21px;
+    }
+
+    .header-search form .submit {
+        font-size: 18px;
+        line-height: 19px;
+        padding: 21px 65px;
+    }
+
+    .header-account .account .acc .acc-name {
+        font-size: 14px;
+        line-height: 19.1px;
+    }
+
+    .acc form select {
+        line-height: 24.55px;
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 40px;
+        padding: 14px 0;
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    nav ul a {
+        padding: 14px 10px;
+    }
+
+
+    .hero-main img {
+        width: 100%;
+    }
+
+    .hero {
+        width: 676px;
+    }
+
+    .hero .first {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        line-height: 54px;
+        margin: 24px 0;
+        font-weight: 700;
+    }
+
+    .hero .last {
+        font-size: 18px;
+        line-height: 21.09px;
+        font-weight: 400;
+    }
+
+    .hero a {
+        font-size: 18px;
+        line-height: 18px;
+        border-radius: 5px;
+        margin-top: 32px;
+    }
+
+    .hero .white {
+        margin-left: 24px;
+    }
+
+    .top-categories {
+        margin: 64px 0;
+    }
+
+    .top-categories-heading h2 {
+        font-size: 32px;
+        line-height: 37.5px;
+    }
+
+    .categories-list {
+        gap: 30px;
+    }
+
+    .categories-top,
+    .categories-bottom {
+        gap: 30px;
+    }
+
+    .categories-top a h3,
+    .categories-bottom a h3 {
+        font-size: 32px;
+        line-height: 37.5px;
+        bottom: 32px;
+        left: 48px;
+    }
+
+    .item-list {
+        padding-left: 24px;
+    }
+
+    .products-heading h2 {
+        font-size: 32px;
+        line-height: 37.5px;
+    }
+
+    .products-list {
+        margin: 30px 0;
+        gap: 32px;
+
+    }
+
+    p.item-title {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+
+    .item-list h3 {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 12px 0 16px;
+    }
+
+    .item-list .view {
+        font-size: 14px;
+        line-height: 19.1px;
+    }
+
+    .item-list .price p {
+        font-size: 24px;
+        line-height: 32.74px;
+        margin: 24px 16px 32px 0;
+    }
+
+    .item-list .price span {
+        font-size: 16px;
+        line-height: 21.82px;
+    }
+
+    .list-cart {
+        font-size: 18px;
+        line-height: 24.55px;
+        padding: 18px 80px 18px 77px;
+
+    }
+
+    .list-img {
+        padding: 18px 19px;
+        margin-left: 14px;
+    }
+}
