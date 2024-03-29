@@ -154,7 +154,6 @@ nav ul a {
 nav ul a:hover {
     background-color: #0066FF;
     color: #fff;
-    font-weight: 700;
 }
 
 .slider {
@@ -374,7 +373,6 @@ p.item-title {
 .list-cart:hover {
     color: #C4DCFF;
     background-color: #0D3E9D;
-
 }
 
 .list-img {
@@ -457,7 +455,6 @@ p.item-title {
 .fa-prev:hover {
     background-color: #000;
     color: #FFF;
-    font-size: 20px;
     cursor: pointer;
 }
 
