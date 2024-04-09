@@ -408,7 +408,7 @@ p.item-title {
     left: -2px;
     color: transparent;
     border: 3px solid #0066FF;
-    border-radius: 50%;
+    border-radius: 70px;
 }
 
 .slick-dots li {
